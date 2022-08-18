@@ -10,6 +10,10 @@ The `/api/placeV2` routes return `place` entities, which represent real-world po
 As of now, Neopolis uses the `placesV2` , but Neoland currently uses `placesV3` , which are NOT compatible. The migration to `placesV3` for both Neopolis and Terra is in preparation.
 :::
 
+:::info
+The placesV2 routes cannot be called with a development token, a production token is required.
+:::
+
 ## Get placesV2 by ids
 
 ```

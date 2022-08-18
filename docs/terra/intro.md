@@ -8,7 +8,7 @@ sidebar_position: 1
 This documentation is still WIP. If you notice any typo, broken link or other issue for the API or documentation, make sure to file a Github Issue by clicking on the `Report an issue` button at the top right corner.
 :::
 
-Terra is a database of real-world data indexed on h3. This data is served via an API for geolocalised games like Neopolis and Neoland.
+Terra is an API of real-world data indexed on h3. This data is served via an API for Neopolis and Neoland.
 
 * Cultural data (country, closest city)
 * Natural data (biomes: urban, forst, desert, etc)
@@ -28,8 +28,8 @@ The Terra Database will be updated regularly for solving these incompatibility i
 ## Terra entities
 
 Terra has 4 main entities
-* `countries`, all soverain states in the world (used to categorize lands)
-* `cities` a curated list of all cities in the world (used for closest city in lands)
+* `countries` a curated list of soverain states in the world
+* `cities` a curated list of cities in the world
 * `lands` are the building blocks of Terra and are associated to a `closest city` and to `biomes`. Their ids are h3 indexes of resolution 8.
 * `places` defines a real-world point of interest (building, station, shop, office, etc...)
 
