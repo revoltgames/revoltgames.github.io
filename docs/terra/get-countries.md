@@ -4,10 +4,10 @@ sidebar_position: 4
 
 # Get Countries
 
-The `/api/countries/` routes return selected states in the world. 
+The `/api/countries/` routes return countries in the world. 
 
 :::tip
-All `/api/countries/` routes accept an optionnal `lang` parameter, which defaults to `en`. This parameter changes the language of the `name` field for every returned countries.
+All `/api/countries/` routes accept an optionnal `lang` parameter, which defaults to `en`. This parameter changes the language of the `name` field for every returned countries. See [Langcodes](./langcodes) for availables `langcodes`
 :::
 
 ## Get all countries

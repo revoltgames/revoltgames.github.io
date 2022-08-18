@@ -12,16 +12,6 @@ sidebar_position: 10
 * [Foursquare Places API v3](https://developer.foursquare.com/docs/places-api-overview) for places
 * [Country names](https://stefangabos.github.io/world_countries/)
 
-## Useful links
-
-* [H3Geo](https://h3geo.org/)
-* [Playable Locations API Design Overview](https://developers.google.com/maps/documentation/gaming/playable-transition)
-* [Semantic Tile Proto and Example Server](https://developers.google.com/maps/documentation/gaming/semantic-tile-transition)
-* [QGIS](https://qgis.org/)
-* [Shapefile format](https://en.wikipedia.org/wiki/Shapefile)
-* [GeoServer](https://geoserver.org/)
-* [H3 index bit layout](https://observablehq.com/@nrabinowitz/h3-index-bit-layout?collection=@nrabinowitz/h3)
-
 ## Interesting unused sata sources
 
 * [Google Earth Data Catalog](https://developers.google.com/earth-engine/datasets/catalog) (natural)
@@ -30,3 +20,13 @@ sidebar_position: 10
 * [GADM](https://gadm.org/data.html) (administrative)
 * [OSM Landuse](https://osmlanduse.org/#12/8.7/49.4/0/) (natural)
 * [IGN](https://geoservices.ign.fr/catalogue) (Natural, Cultural, Roads, Parcs, Elevation)
+
+## Other useful links
+
+* [H3Geo](https://h3geo.org/)
+* [Playable Locations API Design Overview](https://developers.google.com/maps/documentation/gaming/playable-transition)
+* [Semantic Tile Proto and Example Server](https://developers.google.com/maps/documentation/gaming/semantic-tile-transition)
+* [QGIS](https://qgis.org/)
+* [Shapefile format](https://en.wikipedia.org/wiki/Shapefile)
+* [GeoServer](https://geoserver.org/)
+* [H3 index bit layout](https://observablehq.com/@nrabinowitz/h3-index-bit-layout?collection=@nrabinowitz/h3)

@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Biomes
 
-There are 12 land `biomes` (all associated to a biome index numbers from `0` to `11` for a more compact notation)
+There are 12 `biomes` (all associated to a biome index from `0` to `11`, for a more compact notation)
 
 * `TrueDesert` = 0 
 * `SemiArid`   = 1

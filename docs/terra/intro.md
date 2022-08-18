@@ -5,10 +5,10 @@ sidebar_position: 1
 # Introduction
 
 :::info Note
-This documentation is still WIP. If you notice any typo, broken link or other issue, make sure to file an issue by clicking on the `Report an issue` button at the top right corner.
+This documentation is still WIP. If you notice any typo, broken link or other issue for the API or documentation, make sure to file a Github Issue by clicking on the `Report an issue` button at the top right corner.
 :::
 
-Terra is a database with real-world data, indexed on h3. This data is served via an API for geolocalised games like Neopolis and Neoland.
+Terra is a database of real-world data indexed on h3. This data is served via an API for geolocalised games like Neopolis and Neoland.
 
 * Cultural data (country, closest city)
 * Natural data (biomes: urban, forst, desert, etc)
@@ -28,18 +28,18 @@ The Terra Database will be updated regularly for solving these incompatibility i
 ## Terra entities
 
 Terra has 4 main entities
-* `countries`, all soverain states in the world (used to categorise lands)
-* `cities`, a curated list of all cities in the world (used for closest city in lands)
-* `lands` (h3 resolution 8) is the building block of Terra and are associated to a `closest city` and to `biomes`
+* `countries`, all soverain states in the world (used to categorize lands)
+* `cities` a curated list of all cities in the world (used for closest city in lands)
+* `lands` are the building blocks of Terra and are associated to a `closest city` and to `biomes`. Their ids are h3 indexes of resolution 8.
 * `places` defines a real-world point of interest (building, station, shop, office, etc...)
 
 ## Lands and h3Geo
 
-Each land is identified by a unique h3 index of resolution 8, representing a geospacial hexagon with en edge length of ~460m. For more info on h3, see [the official documentation](https://h3geo.org/).
+Each land is identified by a unique h3 index of resolution 8, representing a geospatial hexagon with en edge length of ~460m. For more info on h3, see [the official documentation](https://h3geo.org/).
 
 ## Lands and biomes
 
-All lands have a `main_biome` , which is the most dominent biome in the given land. It il also possible to get the biome details, in percentage for all biomes in the land.
+All lands have a `main_biome` , which is the most dominant biome in the given land. It il also possible to get the biome details, in percentage for all biomes in the land.
 
 For a complete list of available biomes, see [Biomes](./biomes)
 

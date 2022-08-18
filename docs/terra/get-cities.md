@@ -119,5 +119,5 @@ GET https://terra.neopolis.app/api/cities/findByLocation?lat=45.9&lng=1.5
 </details>
 
 :::info
-The returned city will always we in the same country, even if there is a closer city across a border.
+The returned city will always be in the same country, even if there is a closer city across a border.
 :::

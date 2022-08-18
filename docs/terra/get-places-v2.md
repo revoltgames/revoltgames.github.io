@@ -7,7 +7,7 @@ sidebar_position: 7
 The `/api/placeV2` routes return `place` entities, which represent real-world point-of-interests (building, station, shop, office, etc...).
 
 :::caution
-As of now, Neopolis uses the `placesV2` , but Neoland currently uses `placesV3` , which are NOT compatible. The migration to `placesV3` for Neopolis is in preparation.
+As of now, Neopolis uses the `placesV2` , but Neoland currently uses `placesV3` , which are NOT compatible. The migration to `placesV3` for both Neopolis and Terra is in preparation.
 :::
 
 ## Get placesV2 by ids

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Get Lands
 
-The `/api/lands/` routes return `land` entities, which represent hexagonal terrains indexed by h3geo. All lands have an [h3 resolution](https://h3geo.org/docs/core-library/restable/) of 8. Lands are the building block of Terra and are associated to a `closest city` and to `biomes` .
+The `/api/lands/` routes return `land` entities, which represent hexagonal terrains indexed on h3. All lands have an [h3 resolution](https://h3geo.org/docs/core-library/restable/) of 8. Lands are the building block of Terra and are associated to a `closest city` and to `biomes` .
 
 ## Get lands by ids
 
@@ -99,7 +99,7 @@ Getting a lands by location allow to use a `kring` . The `kring` is the "ring" o
 * A `kring` of `2` returns the same lands + all lands directly adjacent to them 
 
 <details>
-<summary>kring = 1 illustration</summary>
+<summary>See kring = 1 illustration</summary>
 <p>
 
 ![kring of 1](./img/neighbors-hexagon.png)
