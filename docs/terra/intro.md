@@ -4,11 +4,23 @@ sidebar_position: 1
 
 # Introduction
 
+
 Terra is a database with real-world data, indexed on h3geo. This data is served via an API for geolocalised games like Neopolis and Neoland.
 
 * Cultural data (country, closest city)
 * Natural data (biomes: urban, forst, desert, etc)
 * Curated Places (real world buildings)
+
+:::danger Disclaimer
+At the time of writing (18/08/2022), the API is available for testing only. It is NOT fully compatible with either Neopolis or Neoland.
+
+The list of differences includes :
+* Countries & cities are not the same as in Neoland or Neopolis. The ids are also different
+* The land informations (ex: closest city or even associated country) may be different
+* The places are currently only in v2 (incompatible with Neoland) and are NOT kept up-to-date
+
+The Terra Database will be updated regularly for solving these incompatibility issues & other bugs that may arrise.
+:::
 
 ## Terra entities
 
