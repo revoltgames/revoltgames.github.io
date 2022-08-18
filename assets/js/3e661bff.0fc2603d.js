@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[80],{3465:o=>{o.exports=JSON.parse('{"title":"[WIP] Neopolis API","slug":"/category/wip-neopolis-api","permalink":"/docs/category/wip-neopolis-api","navigation":{"previous":{"title":"Introduction","permalink":"/docs/neoland/intro"},"next":{"title":"Introduction","permalink":"/docs/neopolis/intro"}}}')}}]);

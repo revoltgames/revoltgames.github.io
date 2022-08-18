@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[413],{2091:e=>{e.exports=JSON.parse('{"title":"Terra API","slug":"/category/terra-api","permalink":"/docs/category/terra-api","navigation":{"previous":{"title":"Introduction","permalink":"/docs/neopolis/intro"},"next":{"title":"Introduction","permalink":"/docs/terra/intro"}}}')}}]);
