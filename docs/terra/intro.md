@@ -22,10 +22,12 @@ Terra has 4 main entities
 
 Each land is identified by a unique h3geo index of resolution 8, representing a geospacial hexagon with en edge length of ~460m. For more info on h3geo, see [the official documentation](https://h3geo.org/).
 
-## Biomes
+## Lands and biomes
 
-TODO
+All lands have a `main_biome` , which is the most dominent biome in the given land. It il also possible to get the biome details, in percentage for all biomes in the land.
 
-## Country names transations
+For a complete list of available biomes, see [Biomes](./biomes)
 
-TODO
+## Country translations
+
+Country names can be translated in a various langages using the `lang` parameter. To see all available langcodes, see [ `Langcodes` ](./langcodes)
