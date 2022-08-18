@@ -26,11 +26,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/revoltgames/docs/",
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/revoltgames/docs/",
+          editUrl: "https://github.com/revoltgames/docs/tree/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
