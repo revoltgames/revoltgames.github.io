@@ -4,6 +4,9 @@ sidebar_position: 1
 
 # Introduction
 
+:::info Note
+This documentation is still WIP. If you notice any typo, broken link or other issue, make sure to file an issue by clicking on the `Report an issue` button at the top right corner.
+:::
 
 Terra is a database with real-world data, indexed on h3. This data is served via an API for geolocalised games like Neopolis and Neoland.
 
