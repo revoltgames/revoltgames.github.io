@@ -18,3 +18,8 @@ There are 12 `biomes` (all associated to a biome index from `0` to `11`, for a m
 * `BuiltUp`    = 9
 * `Ocean`      = 10
 * `NoData`     = 11
+
+## Examples
+
+Main Biomes around Nantes, France (exported via qGIS)
+![Biomes near Nantes, France](./img/biomes-nantes.png)

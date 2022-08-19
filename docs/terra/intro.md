@@ -46,3 +46,11 @@ For a complete list of available biomes, see [Biomes](./biomes)
 ## Country translations
 
 Country names can be translated in a various langages using the `lang` parameter. To see all available langcodes, see [Langcodes](./langcodes)
+
+## Example Graphics
+
+Countries and cities in North America
+![North America](./img/countries-usa.png)
+
+Closest city vizualisation in France (data not up-to-date)
+![Closest City in France](./img/closest-city-france.png)
