@@ -4,24 +4,26 @@ sidebar_position: 8
 
 # Biomes
 
-There are 12 `biomes` (all associated to a biome index from `0` to `11`, for a more compact notation)
+There are 10 `biomes` (all associated to a biome index from `0` to `9` + the `NoData` biome)
 
-* `TrueDesert` = 0 
-* `SemiArid`   = 1
-* `Grassland`  = 2
-* `Forest`     = 3
-* `SaltPan`    = 4
-* `Wetland`    = 5
-* `Ice`        = 6
-* `Water`      = 7
-* `Cropland`   = 8
-* `BuiltUp`    = 9
-* `Ocean`      = 10
-* `NoData`     = 11
+* `BuiltUp`     = 0 
+* `Cropland`    = 1
+* `Grassland`   = 2
+* `Forest`      = 3
+* `Arid`        = 4
+* `Desert`      = 5
+* `Mountain`    = 6
+* `Wetland`     = 7
+* `Ice`         = 8
+* `Water`       = 9
+* `NoData`      = 10
 
 ## Examples
 
 Main Biomes around Nantes, France
+
 ![Biomes near Nantes, France](./img/biomes-nantes.png)
 
-Repartition of mountains biomes in the world ![Mountains](./img/biomes-mountains.png)
+Repartition of mountains biomes in the world 
+
+![Mountains](./img/biomes-mountains.png)
