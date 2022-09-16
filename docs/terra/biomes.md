@@ -21,5 +21,7 @@ There are 12 `biomes` (all associated to a biome index from `0` to `11`, for a m
 
 ## Examples
 
-Main Biomes around Nantes, France (exported via qGIS)
+Main Biomes around Nantes, France
 ![Biomes near Nantes, France](./img/biomes-nantes.png)
+
+Repartition of mountains biomes in the world ![Mountains](./img/biomes-mountains.png)
