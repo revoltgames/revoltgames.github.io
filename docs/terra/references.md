@@ -30,3 +30,5 @@ sidebar_position: 10
 * [Shapefile format](https://en.wikipedia.org/wiki/Shapefile)
 * [GeoServer](https://geoserver.org/)
 * [H3 index bit layout](https://observablehq.com/@nrabinowitz/h3-index-bit-layout?collection=@nrabinowitz/h3)
+* [Global Elevation Data](https://srtm.csi.cgiar.org/srtmdata/)
+* [Mountains Geotiff](https://rmgsc.cr.usgs.gov/gme/)
