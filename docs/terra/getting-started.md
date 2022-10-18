@@ -10,18 +10,17 @@ The API endpoint can be found at `https://terra.neopolis.app`
 
 All endpoints require a token for making queries. In each query's, add the header `Authorization: Bearer <TOKEN>` and replace `<TOKEN>` by your actual token
 
-### Development token
+### Public API token
 
-For developement, this specific token can be used
+For testing the publicly available endpoints, this specific token can be used
 
 ```
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ0ZXJyYS9kZXYiLCJpYXQiOjE2NjA4MTcyMjAsIm5hbWUiOiJ0ZXN0LTEifQ.WWQ8wrohZg8GgSLVB-Sv_MtqBg-GWKK50WSIFrKY6VM
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjYxMDY3NjMsIm5hbWUiOiJ0ZXN0aW5nIiwicGVybXMiOiJwdWJsaWMifQ.-vArzQevtLyfpTYnFcu-rPrKT0aLrkM-iGCzr_yzJxk
 ```
+Last edited: 18 Oct 2022
 
 :::caution
-
-Do not use this development token in production, it could be rewoked at any time
-
+Do not use this development token in production, this particular token can be rewoked at any time
 :::
 
 ### Production token
@@ -31,7 +30,7 @@ To get a production token, send an email at `roland <at> neopolis <dot> io`
 ## Example query with curl
 
 ```
-curl --header 'Authorization: Bearer <AUTH_TOKEN>' --data '{"country_ids":["FRA"]}' terra.neopolis.app/api/countries/findByIds
+curl --header 'Authorization: Bearer <AUTH_TOKEN>' "terra.neopolis.app/countries/findByIds?country_ids=FRA"
 ```
 
 Expected Response:

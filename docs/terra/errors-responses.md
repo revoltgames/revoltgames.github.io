@@ -25,7 +25,7 @@ HTTP/1.1 401 Unauthorized
 Content-Type: text/plain; charset=utf-8
 (...)
 
-unauthorized error: unauthorized: invalid jwt: signature is invalid
+unauthorized error: unauthorized: missing permission
 ```
 
 ## Internal Server Errors ( `status code == 200` )

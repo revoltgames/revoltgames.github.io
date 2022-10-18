@@ -2,14 +2,20 @@
 sidebar_position: 5
 ---
 
-# Get Cities
+# Cities
 
-The `/api/cities` routes return a curated list of all cities in the world
+The `/cities` routes return a curated list of all cities in the world
+
+## Primary Cities
+
+Just like countries, some cities have been selected to be considered `primary`. By default, the API returns all available cities, but it is possible to filter only primary cities by adding `primary_only=true`.
+
+In Neopolis, only Primary Cities should be used.
 
 ## Get cities by ids
 
 ```
-GET https://terra.neopolis.app/api/cities/findByIds?city_ids=FRA_Agen,FRA_AixenProvence
+GET https://terra.neopolis.app/cities/findByIds?city_ids=NLD_Amsterdam,NLD_TheHague
 ```
 
 <details>
@@ -18,31 +24,21 @@ GET https://terra.neopolis.app/api/cities/findByIds?city_ids=FRA_Agen,FRA_AixenP
 
 ```
 {
-    "status": "ok"
-    "data": [
-        {
-            "country_id": "FRA",
-            "id": "FRA_Agen",
-            "latlng": {
-                "latitude": 44.2005017,
-                "longitude": 0.6332844
-            },
-            "name": "Agen",
-            "population": 59000,
-            "region_name": "Aquitaine"
-        },
-        {
-            "country_id": "FRA",
-            "id": "FRA_AixenProvence",
-            "latlng": {
-                "latitude": 43.5230558,
-                "longitude": 5.4536094
-            },
-            "name": "Aix-en-Provence",
-            "population": 147000,
-            "region_name": "Provence-Alpes-Côte-d'Azur"
-        }
-    ],
+  "status": "ok",
+  "data": [
+    {
+      "id": "NLD_Amsterdam",
+      "country_id": "NLD",
+      "name": "Amsterdam",
+      "region_name": "Noord-Holland",
+      "population": 1031000,
+      "latlng": {
+        "latitude": 52.350387797913726,
+        "longitude": 4.90877386838879
+      }
+    },
+    (...)
+  ]
 }
 ```
 
@@ -52,7 +48,7 @@ GET https://terra.neopolis.app/api/cities/findByIds?city_ids=FRA_Agen,FRA_AixenP
 ## Get all cities contained in countries
 
 ```
-GET https://terra.neopolis.app/api/cities/findByCountries?country_ids=FRA,ESP&limit=100&offset=0
+GET https://terra.neopolis.app/cities/findByCountries?country_ids=FRA,ESP&limit=100&offset=0
 ```
 
 <details>
@@ -85,13 +81,13 @@ GET https://terra.neopolis.app/api/cities/findByCountries?country_ids=FRA,ESP&li
 ## Get the city closest to the given land
 
 ```
-GET https://terra.neopolis.app/api/cities/findByLocation?land_id=8818699b1bfffff
+GET https://terra.neopolis.app/cities/findByLocation?land_id=8818699b1bfffff
 ```
 
 OR
 
 ```
-GET https://terra.neopolis.app/api/cities/findByLocation?lat=45.9&lng=1.5
+GET https://terra.neopolis.app/cities/findByLocation?lat=45.9&lng=1.5
 ```
 
 <details>
