@@ -54,7 +54,7 @@ GET /places/findByIds?place_ids=021b293db598402ec928ec56,07e19d5e63ee449019a1b38
 
 ## Get places by location (an optionnal kring)
 
-See [Get Lands](./get-lands.md) for `kring` explanation
+See [Get Lands](./lands.md) for `kring` explanation
 
 ```
 GET /places/findByLocation?land_id=8818699b1bfffff&kring=1&limit=100&offset=0
