@@ -4,12 +4,12 @@ sidebar_position: 7
 
 # Markers (restricted)
 
-The `/markers/` routes return `marker` entities, which represent real-world point-of-interests (building, station, shop, office, etc...) with minimal information, just enough te be displayed on a map. 
+The `/markers/` routes return `marker` entities, which represent real-world point-of-interests with just enough data te be displayed on a map. 
 
-Some markers are `built` and contain the `icon` and `skin` fields. If those fields are missing, then the marker is considered `constructible` (aka: not `built`).
+Some markers are `built` and contain the `icon` and `skin` fields. If those fields are missing, then the marker is considered `constructible` (aka: not `built` ).
 
 :::info
-Only the buildings built this season (this month, in Neopolis) are considered built. This means that when a new season starts in Neopolis, all markers return to the `constructible` state.
+Only the buildings built this `season` (this month, in Neopolis) are considered `built`. This means that when a new season starts in Neopolis, all markers return to the `constructible` state.
 :::
 
 :::caution
@@ -30,7 +30,18 @@ GET /markers/findByRadius?lat=45.766750&lng=4.844647&radius=500&season=1
 {
     "status": "ok",
     "data": [
-        // TODO
+      {
+        "id": "PLACE_ID",
+        "land_id": "LAND_ID",
+        "latlng": {
+              "latitude": 45.768223,
+              "longitude": 4.845756
+        },
+        "icon": 10, // undefined if is_built is false
+        "skin": "SKIN_ID", // undefined if is_built is false
+        "is_built": true
+      },
+      (...)
     ]
 }
 
@@ -41,7 +52,7 @@ GET /markers/findByRadius?lat=45.766750&lng=4.844647&radius=500&season=1
 
 ## Update a marker's information
 
-TODO Write a description
+This endpoint is used to update the marker's information: wheter is it built or not this `season`, the `icon` and the `skin`.
 
 ```
 PUT /markers/update
@@ -68,10 +79,11 @@ PUT /markers/update
 </p>
 </details>
 
-
 ## Remove a marker's information
 
-TODO Write a description
+This endpoint is used to remove an endpoint's information. In Neopolis, this is useful when a building has been sold to the bank, and returns to the `constructible` state.
+
+Note that the marker is not deleted, only it's `built` state.
 
 ```
 PUT /markers/remove
