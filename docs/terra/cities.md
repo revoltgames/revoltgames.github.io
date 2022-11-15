@@ -117,3 +117,7 @@ GET https://terra.neopolis.app/cities/findByLocation?lat=45.9&lng=1.5
 :::info
 The returned city will always be in the same country, even if there is a closer city across a border.
 :::
+
+:::warning
+If the landId or lat/lng are outside any country, the return value will be an empty `city` object with `id=NO_CITY` and `country_id=NO_COUNTRY`
+:::
