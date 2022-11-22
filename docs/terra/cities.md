@@ -10,7 +10,11 @@ The `/cities` routes return a curated list of all cities in the world
 
 Just like countries, some cities have been selected to be considered `primary`. By default, the API returns all available cities, but it is possible to filter only primary cities by adding `primary_only=true`.
 
-In Neopolis, only Primary Cities should be used.
+:::info
+When to use Primary cities ?
+- In Neopolis, only primary cities should be used. 
+- In Neoland all cities are used.
+:::
 
 ## Get cities by ids
 

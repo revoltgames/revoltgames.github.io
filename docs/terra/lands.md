@@ -6,6 +6,15 @@ sidebar_position: 6
 
 The `/lands/` routes return `land` entities, which represent hexagonal terrains indexed on h3. All lands have an [h3 resolution](https://h3geo.org/docs/core-library/restable/) of 8. Lands are the building block of Terra and are associated to a `closest city` and to `biomes` .
 
+:::info
+What is the difference between `closest_city` and `primary_city` ?
+- `closest_city` is the closest city to the land, that can be `primary` or not, and is not necessarily in the same country (used by Neoland)
+- `primary_city` can only be a city maked as `primary` AND is always in the same country (used by Neopolis)
+
+See [Primary Cities](./cities#primary-cities) for mor info
+:::
+
+
 ## Get lands by ids
 
 ```
