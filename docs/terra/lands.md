@@ -36,7 +36,8 @@ GET https://terra.neopolis.app/lands/findByIds?land_ids=8818699b1bfffff,8818698b
         "arid": 8,
         "built_up": 25,
         "grassland": 67
-      }
+      },
+      "markers_count": 924
     }
     (...)
   ]
@@ -82,7 +83,8 @@ GET https://terra.neopolis.app/lands/findByLocation?lat=45.9&lng=1.5&kring=1
         "arid": 8,
         "built_up": 25,
         "grassland": 67
-      }
+      },
+      "markers_count": 924
     }
   ]
 }
