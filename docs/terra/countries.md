@@ -24,6 +24,8 @@ By default, Terra returns all countries (primary included). To receive only prim
 GET https://terra.neopolis.app/countries/findAll?limit=100&offset=0&primary_only=true
 ```
 
+Note: The `limit` and `offset` params are optional
+
 <details>
 <summary>Example Response</summary>
 <p>

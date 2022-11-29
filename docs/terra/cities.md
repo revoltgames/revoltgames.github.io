@@ -55,6 +55,8 @@ GET https://terra.neopolis.app/cities/findByIds?city_ids=NLD_Amsterdam,NLD_TheHa
 GET https://terra.neopolis.app/cities/findByCountries?country_ids=FRA,ESP&limit=100&offset=0
 ```
 
+Note: The `limit` and `offset` params are optional
+
 <details>
 <summary>Example Response</summary>
 <p>
