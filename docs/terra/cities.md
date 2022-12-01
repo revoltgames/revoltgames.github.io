@@ -127,3 +127,35 @@ The returned city will always be in the same country, even if there is a closer 
 :::warning
 If the landId or lat/lng are outside any country, the return value will be an empty `city` object with `id=NO_CITY` and `country_id=NO_COUNTRY`
 :::
+
+## Get cities by name (autocompletion)
+
+Returns all cities who's name starts with the given token.
+
+```
+GET https://terra.neopolis.app/cities/findByName?token=Age&limit=10&primary_only=true
+```
+
+<details>
+<summary>Example Response</summary>
+<p>
+
+```
+{
+    "status": "ok"
+    "data": {
+        "country_id": "FRA",
+        "id": "FRA_Agen",
+        "latlng": {
+            "latitude": 44.2005017,
+            "longitude": 0.6332844
+        },
+        "name": "Agen",
+        "population": 59000,
+        "region_name": "Aquitaine"
+    },
+}
+```
+
+</p>
+</details>

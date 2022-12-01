@@ -124,3 +124,30 @@ The "buffer" can be seen in `red` in this image. Locations in the `green` and in
  
  - `green` = the normal polygons for countries
  - `red` + `green` = the buffered polygons for countries
+
+## Get countries by name (autocompletion)
+
+Returns all countries who's name starts with the given token.
+
+```
+GET https://terra.neopolis.app/countries/findByName?token=Aru&lang=fr&limit=10&primary_only=true
+```
+
+<details>
+<summary>Example Response</summary>
+<p>
+
+```
+{
+    "status": "ok"
+    "data": {
+        "continent": "North America",
+        "id": "ABW",
+        "name": "Aruba",
+        "population": 107000
+    },
+}
+```
+
+</p>
+</details>
