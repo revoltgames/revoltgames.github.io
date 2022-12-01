@@ -59,13 +59,13 @@ GET https://terra.neopolis.app/lands/findByIds?land_ids=8818699b1bfffff,8818698b
 ## Get lands by location
 
 ```
-GET https://terra.neopolis.app/lands/findByLocation?land_id=8818699b1bfffff&kring=1
+GET https://terra.neopolis.app/lands/findByLocation?land_id=8818699b1bfffff&k=1
 ```
 
 OR
 
 ```
-GET https://terra.neopolis.app/lands/findByLocation?lat=45.9&lng=1.5&kring=1
+GET https://terra.neopolis.app/lands/findByLocation?lat=45.9&lng=1.5&k=1
 ```
 
 <details>
@@ -103,20 +103,20 @@ GET https://terra.neopolis.app/lands/findByLocation?lat=45.9&lng=1.5&kring=1
 </details>
 
 :::tip
-The `kring` parameter is optionnal and defaults to 1 (which returns only 1 land)
+The `k` parameter is optionnal and defaults to 1 (which returns only 1 land)
 :::
 
 :::info
-Getting a lands by location allow to use a `kring` . The `kring` is the "ring" of lands adjacent of the "center land". 
-* A `kring` of `0` simply returned the center land
-* A `kring` of `1` returns the center land + all lands directly adjacent to it (in this case, a total of `7` lands)
-* A `kring` of `2` returns the same lands + all lands directly adjacent to them 
+Getting a lands by location allow to use a `k` . The `k` is the "ring" of lands adjacent of the "center land". 
+* A `k` of `0` simply returned the center land
+* A `k` of `1` returns the center land + all lands directly adjacent to it (in this case, a total of `7` lands)
+* A `k` of `2` returns the same lands + all lands directly adjacent to them 
 
 <details>
-<summary>See kring = 1 illustration</summary>
+<summary>See k = 1 illustration</summary>
 <p>
 
-![kring of 1](./img/neighbors-hexagon.png)
+![k of 1](./img/neighbors-hexagon.png)
 
 </p>
 </details>
