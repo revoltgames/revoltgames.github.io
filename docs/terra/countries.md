@@ -129,6 +129,11 @@ The "buffer" can be seen in `red` in this image. Locations in the `green` and in
 
 Returns all countries who's name starts with the given token.
 
+:::info
+For countries, the autocompletion depends on the `lang` parameter. Searching for "Kingdom" will NOT give the same result if `lang=en` as if `lang=fr`
+:::
+
+
 ```
 GET https://terra.neopolis.app/countries/findByName?token=Aru&lang=fr&limit=10&primary_only=true
 ```
